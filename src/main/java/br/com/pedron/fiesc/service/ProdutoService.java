@@ -1,6 +1,8 @@
 package br.com.pedron.fiesc.service;
 
+import br.com.pedron.fiesc.model.Categoria;
 import br.com.pedron.fiesc.model.Produto;
+import br.com.pedron.fiesc.repository.CategoriaRepository;
 import br.com.pedron.fiesc.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,6 +14,9 @@ import java.util.Optional;
 public class ProdutoService {
     @Autowired
     private ProdutoRepository produtoRepository;
+    
+    @Autowired
+    private CategoriaRepository categoriaRepository;
     
     public List<Produto> findAll() {
         return produtoRepository.findAll();

@@ -1,0 +1,10 @@
+/home/dan/Projetos/FIESC_1780-2025/src/main/java/br/com/pedron/fiesc/controller/CategoriaController.java
+/home/dan/Projetos/FIESC_1780-2025/src/main/java/br/com/pedron/fiesc/model/Produto.java
+/home/dan/Projetos/FIESC_1780-2025/src/main/java/br/com/pedron/fiesc/repository/ProdutoRepository.java
+/home/dan/Projetos/FIESC_1780-2025/src/main/java/br/com/pedron/fiesc/model/Categoria.java
+/home/dan/Projetos/FIESC_1780-2025/src/main/java/br/com/pedron/fiesc/service/ProdutoService.java
+/home/dan/Projetos/FIESC_1780-2025/src/main/java/br/com/pedron/fiesc/repository/CategoriaRepository.java
+/home/dan/Projetos/FIESC_1780-2025/src/main/java/br/com/pedron/fiesc/Fiesc17802025Application.java
+/home/dan/Projetos/FIESC_1780-2025/src/main/java/br/com/pedron/fiesc/controller/ProdutoController.java
+/home/dan/Projetos/FIESC_1780-2025/src/main/java/br/com/pedron/fiesc/service/CategoriaService.java
+/home/dan/Projetos/FIESC_1780-2025/src/main/java/br/com/pedron/fiesc/controller/DataLoader.java

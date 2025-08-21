@@ -1,0 +1,10 @@
+br/com/pedron/fiesc/controller/CategoriaController.class
+br/com/pedron/fiesc/repository/CategoriaRepository.class
+br/com/pedron/fiesc/config/DataLoader.class
+br/com/pedron/fiesc/service/ProdutoService.class
+br/com/pedron/fiesc/model/Categoria.class
+br/com/pedron/fiesc/service/CategoriaService.class
+br/com/pedron/fiesc/repository/ProdutoRepository.class
+br/com/pedron/fiesc/controller/ProdutoController.class
+br/com/pedron/fiesc/Fiesc17802025Application.class
+br/com/pedron/fiesc/model/Produto.class

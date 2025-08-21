@@ -1,5 +1,6 @@
 package br.com.pedron.fiesc.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import java.util.ArrayList;
@@ -19,9 +20,9 @@ public class Categoria {
     private String descricao;
     
     @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore
     private List<Produto> produtos = new ArrayList<>();
     
-    // Construtores
     public Categoria() {}
     
     public Categoria(String nome, String descricao) {
@@ -29,7 +30,6 @@ public class Categoria {
         this.descricao = descricao;
     }
     
-    // Getters e Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     
@@ -41,14 +41,4 @@ public class Categoria {
     
     public List<Produto> getProdutos() { return produtos; }
     public void setProdutos(List<Produto> produtos) { this.produtos = produtos; }
-    
-    public void addProduto(Produto produto) {
-        produtos.add(produto);
-        produto.setCategoria(this);
-    }
-    
-    public void removeProduto(Produto produto) {
-        produtos.remove(produto);
-        produto.setCategoria(null);
-    }
 }

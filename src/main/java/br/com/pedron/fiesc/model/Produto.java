@@ -1,5 +1,6 @@
 package br.com.pedron.fiesc.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -28,9 +29,9 @@ public class Produto {
     
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "categoria_id", nullable = false)
+    @JsonIgnore
     private Categoria categoria;
     
-    // Construtores
     public Produto() {}
     
     public Produto(String nome, String descricao, Double preco, Categoria categoria) {
@@ -41,7 +42,6 @@ public class Produto {
         this.dataCadastro = LocalDateTime.now();
     }
     
-    // Getters e Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     
